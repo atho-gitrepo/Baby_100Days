@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@400;700&display=swap');
+
+/* Basic Styles and Colors */
+body {
+    background-color: #f7e9f7; /* A soft, light pink background */
+    font-family: 'Poppins', sans-serif;
+    color: #4b3e4e; /* A dark, gentle purple */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+    margin: 20px;
+}
+
+/* Header and Titles */
+.main-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3em;
+    color: #ff69b4; /* Hot pink */
+    margin-bottom: 0;
+}
+
+.sub-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5em;
+    color: #d1568e;
+    margin-top: 0;
+}
+
+/* Photo Section */
+.baby-photo {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #ffc0cb; /* Light pink border */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+/* Details Section */
+.name {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;
+    color: #ff69b4;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.date {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #4b3e4e;
+    margin-top: 0;
+}
+
+.date-number {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #d1568e;
+    margin-top: 0;
+}
+
+.invitation {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+/* Footer */
+.footer-section {
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #999;
+}
+/* Gallery Section Styles */
+.gallery-section {
+    margin-top: 40px;
+}
+
+.gallery-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5em;
+    color: #ff69b4;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    padding: 0;
+}
+
+.gallery-photo {
+    width: 100%;
+    height: 150px; /* Fixed height for consistent grid layout */
+    object-fit: cover; /* This ensures the image fills the space without distortion */
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-photo:hover {
+    transform: scale(1.05);
+}
